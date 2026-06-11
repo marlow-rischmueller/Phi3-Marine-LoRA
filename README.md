@@ -51,6 +51,19 @@ The standard tokeniser treats numbers as sequences of digit tokens, losing numer
 
 **Key finding:** The fine-tuned model gains domain knowledge without displacing general capabilities - no catastrophic forgetting on MMLU. Reproducibility of evaluation results was confirmed via a 10-run repeatability test with fixed seeds.
 
+### xVal Numerical Tokenisation
+
+The xVal-adapted model did not learn to use the new single-token number
+representation. Across all tested training configurations, evaluation accuracy
+on the arithmetic tasks remained at 0, while the evaluation loss plateaued
+early. The various configurations indicate the issue is not hyperparameter
+selection but the magnitude of the modification: LoRA fine-tuning is not
+sufficient to teach an existing model this changed numerical representation.
+
+This is consistent with the updated version of the xVal paper, in which the
+authors note that the method requires training specially-modified language
+models from scratch rather than adapting an existing one. Full pre-training of
+the adapted model is left to future work.
 
 ---
 
