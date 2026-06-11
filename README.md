@@ -93,10 +93,10 @@ The standard tokeniser treats numbers as sequences of digit tokens, losing numer
 git clone https://github.com/marlow-rischmueller/Phi3-Marine-LoRA.git
 cd Phi3-Marine-LoRA
 
-pip install -r reqs.txt
+pip install -r requirements.txt
 ```
 
-> **Note:** `flash-attn` requires a CUDA-capable GPU. For CPU-only testing, remove it from `reqs.txt` and set `attn_implementation="eager"` in the notebooks.
+> **Note:** `flash-attn` requires a CUDA-capable GPU. For CPU-only testing, remove it from `requirements.txt` and set `attn_implementation="eager"` in the notebooks.
 
 ### 2 · Fine-Tuning (`Phi3_Training.ipynb`)
 
