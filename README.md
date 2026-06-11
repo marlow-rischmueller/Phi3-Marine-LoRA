@@ -68,7 +68,7 @@ The standard tokeniser treats numbers as sequences of digit tokens, losing numer
 ├── xval/                             # xVal implementation (Golkar et al., 2024)
 │                                     # Original: https://github.com/PolymathicAI/xVal
 ├── results/                          # Saved evaluation results
-└── reqs.txt                          # Dependencies
+└── requirements.txt                  # Dependencies
 ```
 
 ---
